@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/registrasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:text="FORM REGISTRASI"
+        android:textSize="@dimen/teksBesar"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10sp"
+        android:text="Username"
+        android:textSize="@dimen/teksNormal"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/input_username"
+        android:hint="Masukan username anda"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:textSize="@dimen/teksNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10sp"
+        android:text="Password"
+        android:textSize="@dimen/teksNormal"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/input_password"
+        android:hint="Masukan password anda"
+        android:inputType="textPassword"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:textSize="@dimen/teksNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/negara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10sp"
+        android:text="Negara"
+        android:textSize="@dimen/teksNormal"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/input_negara"
+        android:hint="Masukan negara anda"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:textSize="@dimen/teksNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10sp"
+        android:text="Nomor Telepon"
+        android:textSize="@dimen/teksNormal"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/input_hp"
+        android:hint="Masukan nomor telepon anda"
+        android:inputType="phone"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:textSize="@dimen/teksNormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/jenis_kelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10sp"
+        android:text="Jenis Kelamin"
+        android:textSize="@dimen/teksNormal"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp" >
+        <RadioButton
+            android:id="@+id/input_pria"
+            android:text="Pria"
+            android:textSize= "@dimen/teksNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton
+            android:id="@+id/input_wanita"
+            android:text="Wanita"
+            android:textSize= "@dimen/teksNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+    <Button
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:textSize="@dimen/teksNormal"
+        android:id="@+id/submit"
+        android:text="submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
